@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import CounterContainer from "../src/containers/counter";
+import CounterManagerContainer from "./containers/counterManager";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <CounterContainer />
+      <hr />
+      <CounterManagerContainer />
+      <hr />
     </div>
   );
 }
