@@ -1,3 +1,3 @@
 # Tasks deployment
 
-[simple_counter](https://git-dmr.github.io/counter/).
+[counter_of_counters](https://git-dmr.github.io/counter/).
