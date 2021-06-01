@@ -1,10 +1,9 @@
 import React from "react";
 
-const Counter = ({ handleIncrement, handleReset, handleDecrement, currentValue }) => (
+const Counter = ({ handleIncrement, handleReset, handleDecrement, currentValue, id }) => (
   <div>
     <div>
-      <strong>{"Counter_ :  "}</strong>
-      {currentValue}
+      <h2>{"Counter:  " + currentValue}</h2>
     </div>
     <button onClick={handleIncrement}>Increment.</button>
     <button onClick={handleReset}>Reset.</button>

@@ -1,4 +1,5 @@
 import React from "react";
+import CounterContainer from "../containers/counter";
 import CounterManager from "../components/counterManager/index.js";
 
 class CounterManagerContainer extends React.Component {
@@ -26,12 +27,23 @@ class CounterManagerContainer extends React.Component {
   }
 
   render() {
+    const allCounters = [];
+
+    for (var i = 0; i < this.state.totalCounters; i += 1) {
+      allCounters.push(i);
+    }
+
+    const counterItems = allCounters.map((item) => <CounterContainer key={item} />);
+
     return (
-      <CounterManager
-        addCounter={this.addCounter}
-        removeCounter={this.removeCounter}
-        totalCounters={this.state.totalCounters}
-      />
+      <div>
+        <CounterManager
+          addCounter={this.addCounter}
+          removeCounter={this.removeCounter}
+          totalCounters={this.state.totalCounters}
+        />
+        {counterItems}
+      </div>
     );
   }
 }

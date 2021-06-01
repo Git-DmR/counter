@@ -6,6 +6,7 @@ class CounterContainer extends React.Component {
     super(props);
     this.state = {
       currentValue: 0,
+      id: 0,
     };
     this.handleIncrement = this.handleIncrement.bind(this);
     this.handleReset = this.handleReset.bind(this);
@@ -37,6 +38,7 @@ class CounterContainer extends React.Component {
         handleReset={this.handleReset}
         handleDecrement={this.handleDecrement}
         currentValue={this.state.currentValue}
+        id={this.state.id}
       />
     );
   }

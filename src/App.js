@@ -8,6 +8,7 @@ function App() {
       <CounterContainer />
       <hr />
       <CounterManagerContainer />
+      <hr />
     </div>
   );
 }
